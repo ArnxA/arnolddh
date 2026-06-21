@@ -139,45 +139,7 @@
     }
     .about-text p:last-child { margin-bottom: 0; }
 
-    /* ── EXPERIENCIA ── *
-    .exp-list { list-style: none; display: flex; flex-direction: column; gap: 2.5rem; }
-
-    .exp-item {}
-
-    .exp-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      gap: 0.3rem;
-      margin-bottom: 0.3rem;
-    }
-
-    .exp-role {
-      font-weight: 600;
-      font-size: 1.05rem;
-    }
-
-    .exp-period {
-      font-family: var(--mono);
-      font-size: 0.68rem;
-      color: var(--mid);
-      letter-spacing: 0.06em;
-    }
-
-    .exp-company {
-      font-style: italic;
-      color: var(--mid);
-      font-size: 0.9rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .exp-desc {
-      font-size: 0.95rem;
-      color: var(--black);
-      max-width: 58ch;
-    }
-
+   
     /* ── FORMACIÓN ── */
     .edu-list { list-style: none; display: flex; flex-direction: column; gap: 2rem; }
 
@@ -197,23 +159,23 @@
       margin-top: 0.15rem;
     }
 
-    /* ── PROYECTOS ── *
-    .proj-list { list-style: none; display: flex; flex-direction: column; gap: 2rem; }
+    /* ── CURSOS ── */
+    .course-list { list-style: none; display: flex; flex-direction: column; gap: 2rem; }
 
-    .proj-title {
+    .course-title {
       font-weight: 600;
       font-size: 1.05rem;
     }
-    .proj-title a {
+    .course-title a {
       color: inherit;
       text-decoration: none;
       border-bottom: 1px solid var(--rule);
       padding-bottom: 1px;
       transition: border-color 0.15s;
     }
-    .proj-title a:hover { border-color: var(--black); }
+    .course-title a:hover { border-color: var(--black); }
 
-    .proj-desc {
+    .course-desc {
       font-size: 0.95rem;
       color: var(--mid);
       max-width: 58ch;
@@ -245,6 +207,45 @@
     }
     .contact-val a:hover { border-color: var(--black); }
 
+    /* ── ENLACES DE INTERÉS ─── 
+    .links-list { list-style: none; display: flex; flex-direction: column; gap: 2.5rem; }
+
+    .links-item {}
+
+    .links-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .links-role {
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+
+    .links-period {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--mid);
+      letter-spacing: 0.06em;
+    }
+
+    .links-company {
+      font-style: italic;
+      color: var(--mid);
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .links-desc {
+      font-size: 0.95rem;
+      color: var(--black);
+      max-width: 58ch;
+    } */
+  
     /* ── FOOTER ── */
     footer {
       padding: 2rem 0;
@@ -327,42 +328,6 @@
 
 
     <!-- ════════════════════════════════════════════════
-         EXPERIENCIA LABORAL
-         Duplica un bloque <li> para cada puesto.
-         ════════════════════════════════════════════════ 
-    <section id="experiencia">
-      <p class="section-label">Experiencia</p>
-      <ul class="exp-list">
-
-        <li class="exp-item">
-          <div class="exp-meta">
-            <span class="exp-role">Cargo / Posición</span>
-            <span class="exp-period">2022 — presente</span>
-          </div>
-          <p class="exp-company">Nombre de la empresa o institución</p>
-          <p class="exp-desc">
-            Describe brevemente tu rol: qué hiciste, qué lograste, con qué tecnologías o metodologías trabajaste.
-          </p>
-        </li>
-
-        <li class="exp-item">
-          <div class="exp-meta">
-            <span class="exp-role">Cargo anterior</span>
-            <span class="exp-period">2019 — 2022</span>
-          </div>
-          <p class="exp-company">Empresa anterior</p>
-          <p class="exp-desc">
-            Descripción del rol y logros principales. Sé específico: cifras, proyectos, impacto.
-          </p>
-        </li>
-
-        // Añade más puestos copiando el bloque <li> de arriba //
-
-      </ul>
-    </section>
-  -->
-
-    <!-- ════════════════════════════════════════════════
          FORMACIÓN ACADÉMICA
          ════════════════════════════════════════════════ -->
     <section id="formacion">
@@ -388,41 +353,94 @@
 
 
     <!-- ════════════════════════════════════════════════
-         PROYECTOS
-         Si un proyecto tiene URL, ponla en el href.
+         CURSOS
+         Si un curso tiene URL, ponla en el href.
          Si no, reemplaza el <a> por texto plano.
-         ════════════════════════════════════════════════ 
-    <section id="proyectos">
-      <p class="section-label">Proyectos</p>
-      <ul class="proj-list">
+         ════════════════════════════════════════════════ -->
+    <section id="cursos">
+      <p class="section-label">Cursos</p>
+      <ul class="course-list">
 
         <li>
-          <p class="proj-title">
-            <a href="https://github.com/tu-usuario/proyecto" target="_blank" rel="noopener">
-              Nombre del proyecto
+          <p class="course-title">
+            <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank" rel="noopener">
+              Introducción a Ciencia de la Computación
             </a>
           </p>
-          <p class="proj-desc">
-            Una o dos líneas describiendo el proyecto: qué problema resuelve, qué tecnologías usa o cuál fue tu rol.
+          <p class="course-desc">
+           Cuadros Vargas Ernesto, Distinguished Speaker of the Association of Computing Machinery (ACM). Former Member of the BOG/IEEE-CS (2020-2023).Former Member of the Steering Committee of the ACM/IEEE-CS Computing Curricula CC2020
           </p>
         </li>
 
         <li>
-          <p class="proj-title">
-            <a href="https://github.com/tu-usuario/otro-proyecto" target="_blank" rel="noopener">
-              Otro proyecto
+          <p class="course-title">
+            <a href="https://www.linkedin.com/in/marcos-maravi/" target="_blank" rel="noopener">
+              Cálculo I
             </a>
           </p>
-          <p class="proj-desc">
-            Descripción del segundo proyecto.
+          <p class="course-desc">
+           Maravi Percca Edwin Marcos, Doctor em matemáticas - ICMC - USP.
           </p>
         </li>
 
-        // Añade más proyectos copiando el bloque <li> de arriba //
+          <li>
+          <p class="course-title">
+            <a href="https://www.linkedin.com/in/ana-eylin-coronel-tello-8934a4140/" target="_blank" rel="noopener">
+              Redacción y Técnicas de Comunicación Efectiva 
+            </a>
+          </p>
+          <p class="course-desc">
+           Coronel Tello Ana Eylin, Catedrática/ Docente investigadora/ Magister en Gestión educativa.
+          </p>
+        </li>
+
+           <li>
+          <p class="course-title">
+            <a href="https://www.linkedin.com/in/miryam-cosme-felix-22a52140/" target="_blank" rel="noopener">
+              Métodos de Estudio Universitario
+            </a>
+          </p>
+          <p class="course-desc">
+            Cosme Félix Miryam, Gerente General de Kintsukuroi.
+          </p>
+        </li>
+
+        
+           <li>
+          <p class="course-title">
+              Álgebra y Geometría Analítica
+            </a>
+          </p>
+          <p class="course-desc">
+            Mg. Terreros Navarro Hellen Gloria. 
+          </p>
+        </li>
+
+         <li>
+          <p class="course-title">
+              Medio Ambiente y Desarrollo Sostenible
+            </a>
+          </p>
+          <p class="course-desc">
+            Dra. Fanola Merino Petronila Merida.
+          </p>
+        </li>
+
+           <li>
+          <p class="course-title">
+              Desarrollo Personal y Liderazgo
+            </a>
+          </p>
+          <p class="course-desc">
+            Basualdo Porras Luz. PhD. Ciencias Ambientales, Universidad Antonio de Nebrija
+          </p>
+        </li>
+        
+        // Añade más cursos copiando el bloque <li> de arriba //
 
       </ul>
     </section>
-  -->
+
 
     <!-- ════════════════════════════════════════════════
          CONTACTO
@@ -468,8 +486,42 @@
 
       </div>
     </section>
+ 
+<!-- ════════════════════════════════════════════════
+         ENLACES DE INTERÉS
+         Duplica un bloque <li> para cada puesto.
+         ════════════════════════════════════════════════ 
+    <section id="enlaces de interés">
+      <p class="section-label">Enlaces de Interés</p>
+      <ul class="links-list">
 
+        <li class="links-item">
+          <div class="links-meta">
+            <span class="links-role">Profesor a cargo</span>
+            <span class="links-period">2026 - presente</span>
+          </div>
+          <p class="links-company">Universidad Nacional Mayor de San Marcos</p>
+          <p class="links-desc">
+            Distinguished Speaker of the Association of Computing Machinery (ACM). Former Member of the BOG/IEEE-CS (2020-2023).Former Member of the Steering Committee of the ACM/IEEE-CS Computing Curricula CC2020
+          </p>
+        </li>
 
+        <li class="links-item">
+          <div class="links-meta">
+            <span class="links-role">Cargo anterior</span>
+            <span class="links-period">2019 — 2022</span>
+          </div>
+          <p class="links-company">Empresa anterior</p>
+          <p class="links-desc">
+            Descripción del rol y logros principales. Sé específico: cifras, proyectos, impacto.
+          </p>
+        </li> 
+ 
+        // Añade más puestos copiando el bloque <li> de arriba //
+
+      </ul>
+    </section> -->
+ 
     <!-- ════════════════════════════════════════════════
          PIE DE PÁGINA
          ════════════════════════════════════════════════ -->
